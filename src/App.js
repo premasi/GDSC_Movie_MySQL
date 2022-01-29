@@ -92,8 +92,6 @@ function App() {
               </li>
             </ul>
           </header>
-
-          <div className="special">Source from TMDB :) by Raka Ryandra Guntara</div>
           
           {selectedMovie && <Detail selectedMovie={selectedMovie} onMovieSelect={onMovieSelect}/>}
 
