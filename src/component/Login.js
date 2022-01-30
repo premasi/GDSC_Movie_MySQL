@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./Login.css";
 import Register from "./Register";
 
-function Login(){
+export const Login = () => {
     return(
-        <div className="login">
+        <div className="Main">
             <div className="Container-login">
                 <h1 className="Title-login">Welcome Back!</h1>
                 <label>Username<br></br></label>
@@ -20,5 +20,3 @@ function Login(){
         </div>
     )
 }
-
-export default Login;
