@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Watchlist from './component/Watchlist.js';
 import Detail from './component/Detail';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 
 
 const API_KEY = "api_key=d557ce4f030b477de4f503f2305d0f57";
@@ -90,6 +91,12 @@ function App() {
                 </input>
                 </form>
               </li>
+              <li>
+                <a href="" className='nav-link1'>Login</a>
+              </li>
+              <li>
+                <a href="" className='nav-link'>Sign Up</a>
+              </li>
             </ul>
           </header>
           
@@ -105,8 +112,7 @@ function App() {
 
           <div className="main">
             <Watchlist movies ={favourit} onMovieSelect={onMovieSelect} onFavouritSelect={removeFavourit}/>
-          </div>     
-          
+          </div>
   </>
   );
 }
