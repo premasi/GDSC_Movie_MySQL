@@ -2,9 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Watchlist from './component/Watchlist.js';
 import Detail from './component/Detail';
 import Auth from './component/Auth.js';
-import { Login } from './component/Login.js';
 import './App.css';
-import { Router, Routes } from 'react-router-dom';
 
 
 const API_KEY = "api_key=d557ce4f030b477de4f503f2305d0f57";
@@ -94,23 +92,17 @@ function App() {
                 </form>
               </li>
 
-              <Routes>
-                <Router exacth path="/" component={App} />
-                <Router exacth path="/Login" component={Login} />                
-              </Routes>
-
-
               <li>
-                <button href="" className='nav-link1' onClick={
+                <button href="/login" className='nav-link1' onClick={
                   () => {
                     Auth.login(()=>{
-                      this.props.history.push("/Login")
+                      this.props.history.push("/login")
                     })
                   }
                 }>Login</button>
               </li>
               <li>
-                <button href="" className='nav-link'>Sign Up</button>
+                <button href="/register" className='nav-link'>Sign Up</button>
               </li>
             </ul>
           </header>
