@@ -1,12 +1,20 @@
 import React from 'react';
-import { Router, Route } from 'react-router';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import App from '../App';
-import { Login } from './Login';
+import Login from './Login'
+import Register from './Register';
 
 const createRoutes = () => (
     <Router>
-      <Route exact path="/" component={App}/>
-      <Route exact path="/Login" component={Login}/>
+      <Routes>
+        <Route path="/" element={<App/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+      </Routes>
     </Router>
 );
 
