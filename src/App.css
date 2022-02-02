@@ -90,7 +90,7 @@
   border-radius: 30px;
   padding: 0.5rem 1rem;
   border-color: #B30F27;
-  margin-right: -100px;
+  margin-right: -20px;
 }
 
 .movie {
@@ -194,7 +194,7 @@
 }
 
 .nav-link1{
-  margin-left: 120px;
+  margin-left: 30px;
   padding-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
@@ -218,4 +218,52 @@
   align-items: center;
   color: #818181;
   font-weight: bold;
+}
+
+*{
+  background-color: #0c1117;
+}
+
+.Container-login{
+  width: 400px;  
+  overflow: hidden;  
+  margin: auto;  
+  margin: 20 0 0 450px; 
+  margin-top: 100px; 
+  padding: 80px;  
+  border-radius: 15px ;
+  background: #fff;  
+}
+
+input{
+  background-color: #fff;
+  width: 250px;
+  padding: 5px;
+}
+
+label{
+  color: rgb(99, 99, 99);
+  background: #fff;
+}
+
+.Title-login{
+  color: #0c1117;
+  background: #fff;
+  width: 300px;
+}
+
+.btn-login{
+  background-color: #4ECCB2;
+  margin-left: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btn-register{
+  margin-left: 30px;
+  background-color: #fff;
+  padding: 5px;
+  width: 100px;
+  border-radius: 10px;
 }

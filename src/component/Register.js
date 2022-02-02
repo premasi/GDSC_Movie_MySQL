@@ -1,8 +1,7 @@
 import react from "react";
-import "./Login.css";
 import {Link} from "react-router-dom"
 
-function Register(){
+export const Register = () =>{
     return(
         <div className="login">
             <div className="Container-login">
@@ -17,7 +16,7 @@ function Register(){
                 <Link to="/login" style={{backgroundColor: 'white'}}>
                     <button className='nav-link1'>Login</button>
                 </Link>
-                <button className='nav-link' onClick={this.onSubmit}>Sign Up</button>
+                <button className='nav-link'>Sign Up</button>
             </div>
         </div>
     );

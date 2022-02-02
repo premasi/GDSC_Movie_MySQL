@@ -5,8 +5,8 @@ import {
   Route,
 } from "react-router-dom";
 import App from '../App';
-import Login from './Login'
-import Register from './Register';
+import {Login} from './Login'
+import {Register} from './Register';
 
 const createRoutes = () => (
     <Router>

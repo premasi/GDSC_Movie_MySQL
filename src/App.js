@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Watchlist from './component/Watchlist.js';
 import Detail from './component/Detail';
-import Auth from './component/Auth.js';
 import './App.css';
 import {Link} from "react-router-dom"
 
