@@ -3,6 +3,7 @@ import Watchlist from './component/Watchlist.js';
 import Detail from './component/Detail';
 import Auth from './component/Auth.js';
 import './App.css';
+import {Link} from "react-router-dom"
 
 
 const API_KEY = "api_key=d557ce4f030b477de4f503f2305d0f57";
@@ -93,16 +94,14 @@ function App() {
               </li>
 
               <li>
-                <button href="/login" className='nav-link1' onClick={
-                  () => {
-                    Auth.login(()=>{
-                      this.props.history.push("/login")
-                    })
-                  }
-                }>Login</button>
+                <Link to="/login">
+                  <button className='nav-link1'>Login</button>
+                </Link>
               </li>
               <li>
-                <button href="/register" className='nav-link'>Sign Up</button>
+                <Link to="/register">
+                  <button className='nav-link'>Sign Up</button>
+                </Link>
               </li>
             </ul>
           </header>
