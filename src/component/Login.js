@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Register from "./Register";
+import {Link} from "react-router-dom"
 
 export const Login = () => {
     return(
@@ -14,8 +15,10 @@ export const Login = () => {
                 <input type="text"></input>
                 <br></br>
                 <br></br>
-                <button className="btn-login">Login</button>
-                <button className="btn-register">Register</button>
+                <button className='nav-link1' onClick={onSubmit}>Login</button>
+                <Link to="/register">
+                    <button className='nav-link'>Sign Up</button>
+                </Link>
             </div>
         </div>
     )
