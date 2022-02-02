@@ -1,5 +1,6 @@
 import react from "react";
 import "./Login.css";
+import {Link} from "react-router-dom"
 
 function Register(){
     return(
