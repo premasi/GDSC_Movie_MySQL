@@ -13,8 +13,10 @@ function Register(){
                 <input type="text"></input>
                 <br></br>
                 <br></br>
-                <button className="btn-login">Sign Up</button>
-                <button className="btn-register">Login</button>
+                <Link to="/login" style={{backgroundColor: 'white'}}>
+                    <button className='nav-link1'>Login</button>
+                </Link>
+                <button className='nav-link' onClick={this.onSubmit}>Sign Up</button>
             </div>
         </div>
     );
