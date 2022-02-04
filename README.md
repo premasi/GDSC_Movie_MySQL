@@ -7,3 +7,5 @@ Anggota Kelompok:
 
 Tampilan isi database akun Register
 ![Search](./foto/1.png)
+
+Note: Untuk password sudah menggunakan Jsonwebtoken
