@@ -6,4 +6,4 @@ Anggota Kelompok:
 - Aini Khadija (Front-end)
 
 Tampilan isi database akun Register
-![Search](./foto/Screenshot 2022-02-04 213413.png)
+![Search](./foto/1.png)
